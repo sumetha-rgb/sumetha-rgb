@@ -5,7 +5,6 @@
 
 <p align="center">
   <a href="mailto:sumetra2@gmail.com"><img src="https://img.shields.io/badge/Email-EA4335?logo=gmail&logoColor=white" alt="Email"></a>
-  <a href="https://linkedin.com/in/your-name"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?logo=linkedin&logoColor=white" alt="LinkedIn"></a>
 </p>
 
 <p align="center">
