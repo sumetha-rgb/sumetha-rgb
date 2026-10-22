@@ -1,21 +1,21 @@
 <h1 align="center">Sumetha</h1>
 
 <p align="center">
-  <b>Full-Stack Developer</b> · Intern at COM7
+<b>Full-Stack Developer</b> · Intern at COM7
 </p>
 
 <p align="center">
-  Full-Stack Developer · Software Engineer · Data Analyst · DevOps Engineer
+Full-Stack Developer · Software Engineer · Data Analyst · DevOps Engineer
 </p>
 
 <p align="center">
-  <a href="mailto:sumetra2@gmail.com">
-    <img src="https://img.shields.io/badge/Email-EA4335?logo=gmail&logoColor=white" alt="Email">
-  </a>
+<a href="mailto:sumetra2@gmail.com">
+<img src="https://img.shields.io/badge/Email-EA4335?logo=gmail&logoColor=white" alt="Email">
+</a>
 </p>
 
 <p align="center">
-  <img src="https://skillicons.dev/icons?i=js,ts,nextjs,react,nodejs,tailwind,postgres,supabase,prisma,git,vercel&perline=11" alt="Skills" />
+<img src="https://skillicons.dev/icons?i=js,ts,nextjs,react,nodejs,tailwind,postgres,supabase,prisma,git,vercel&perline=11" alt="Skills" />
 </p>
 
 ---
@@ -44,13 +44,13 @@
 
 ## Projects
 
-| โปรเจกต์ | ช่วยอะไร | เทคโนโลยี | ลิงก์ |
-|---------|----------|----------|------|
-| **Assignment Management** | สั่งงาน ตรวจงาน ให้คะแนน มี Leaderboard + Mission | Next.js, Prisma, PostgreSQL | [Repo](https://github.com/SorayuthJapanya/com7-assignment-system) |
-| **Interview Queue** | เช็คชื่อ ออกเลขคิว ส่งบัตรคิวให้ผู้สมัคร | Next.js, Supabase, Brevo | [Repo](https://github.com/sumetha-rgb/com7-Queue) |
-| **Job Vacancy** | ค้นหางานตามจังหวัด ส่งอีเมลยืนยันเป็นชุด | Google Apps Script, Brevo | [Repo](https://github.com/sumetha-rgb/Com7-Job_Vacancy) |
-| **Stock Req** | เบิก คืน เช็คสต็อก แจ้งเตือนผ่าน LINE | Next.js, Google Sheets, NextAuth | [Repo](https://github.com/sumetha-rgb/com7-Stock) |
-| **NextStep Onboarding** | ยืนยันตัวตนด้วย OTP + แยกสิทธิ์ + หน้ากฎระเบียบ | Next.js, NextAuth, Google Sheets | [Repo](https://github.com/sumetha-rgb/COM7-NextStep) |
+| โปรเจกต์                      | ช่วยอะไร                                              | เทคโนโลยี                              | ลิงก์                                                                 |
+|-------------------------------|-------------------------------------------------------|----------------------------------------|-----------------------------------------------------------------------|
+| **Assignment Management**     | สั่งงาน ตรวจงาน ให้คะแนน มี Leaderboard + Mission     | Next.js, Prisma, PostgreSQL            | [Repo](https://github.com/SorayuthJapanya/com7-assignment-system)     |
+| **Interview Queue**           | เช็คชื่อ ออกเลขคิว ส่งบัตรคิวให้ผู้สมัคร              | Next.js, Supabase, Brevo               | [Repo](https://github.com/sumetha-rgb/com7-Queue)                     |
+| **Document LINE Notify**      | ติดตามเอกสารผู้สมัครผ่าน LINE + Dashboard แอดมิน     | Google Apps Script, LINE API, LIFF     | Private (Internal)                                                    |
+| **Stock Req**                 | เบิก คืน เช็คสต็อก แจ้งเตือนผ่าน LINE                 | Next.js, Google Sheets, NextAuth       | [Repo](https://github.com/sumetha-rgb/com7-Stock)                     |
+| **NextStep Onboarding**       | ยืนยันตัวตนด้วย OTP + แยกสิทธิ์ + หน้ากฎระเบียบ     | Next.js, NextAuth, Google Sheets       | [Repo](https://github.com/sumetha-rgb/COM7-NextStep)                  |
 
 ### รายละเอียดแต่ละโปรเจกต์
 
@@ -89,17 +89,24 @@
 </details>
 
 <details>
-<summary><b>3. เว็บค้นหาตำแหน่งงานว่าง (Job Vacancy)</b></summary>
+<summary><b>3. ระบบติดตามเอกสารผู้สมัครผ่าน LINE (Document LINE Notify)</b></summary>
 
-คนสมัครหาตำแหน่งงานตามจังหวัดยาก ส่วนทีมสรรหาต้องส่งอีเมลยืนยันทีละคน
+ระบบ Google Apps Script สำหรับติดตามเอกสารผู้สมัคร/พนักงานผ่าน LINE  
+ผู้สมัครอัปโหลดเอกสารผ่าน LIFF และรับแจ้งเตือนสถานะผ่านแชท LINE โดยตรง
 
-- ค้นหาตำแหน่งตามจังหวัด และกรองตามบริษัทในเครือ
-- หน้าแอดมินเปลี่ยนแหล่งข้อมูลได้โดยไม่ต้องแก้โค้ด
-- ส่งอีเมลเป็นชุด ดูตัวอย่างก่อนส่งจริง และอัปเดตสถานะกลับเข้าชีทให้อัตโนมัติ
+**ฟีเจอร์หลัก**
+- อัปโหลดเอกสารผ่าน LIFF (เปิดในแอป LINE ได้เลย) + แนบไฟล์ผ่านแชทได้โดยตรง
+- Flex Message แจ้งเตือนสถานะแบบการ์ด (อนุมัติ / ตีกลับพร้อมเหตุผล / เตือนเอกสารค้าง)
+- Dashboard แอดมิน: สรุปภาพรวม, Timeline, อนุมัติ/ตีกลับเอกสาร
+- จัดการผู้สมัคร + ฐานข้อมูลสาขา (Branch Database)
+- ระบบ Login + Session สำหรับแอดมิน + Audit Log
+- รองรับหลายบริษัท และ Sample Doc แยกตามบริษัท
 
-**ผลลัพธ์:** ทีมสรรหาไม่ต้องส่งอีเมลยืนยันทีละคน เลือกเป็นชุดแล้วส่งได้เลย
+**ผลลัพธ์:** ทีมสรรหาไม่ต้องตามเอกสารด้วยมือ ผู้สมัครรู้สถานะทันทีผ่าน LINE
 
-`Google Apps Script` `JavaScript` `Google Sheets` `Brevo API`
+`Google Apps Script` `LINE Messaging API` `LIFF` `Google Sheets` `Google Drive` `Flex Message`
+
+> Private repository (Internal COM7)
 </details>
 
 <details>
@@ -139,7 +146,7 @@
 มิถุนายน – ตุลาคม
 
 ทำและดูแลระบบเว็บภายในให้ทีมสรรหาบุคลากรและทีมสต็อก  
-มีระบบคิวสัมภาษณ์ หน้าค้นหาตำแหน่งงาน ระบบเบิกสินค้า และระบบยืนยันตัวตน Onboarding  
+มีระบบคิวสัมภาษณ์ หน้าค้นหาตำแหน่งงาน ระบบเบิกสินค้า ระบบยืนยันตัวตน Onboarding และระบบติดตามเอกสารผ่าน LINE  
 พัฒนาและดูแลระบบ Assignment Management อย่างต่อเนื่อง (รวม Mission Quest, Leaderboard, Level System)  
 ใช้ Supabase จัดการข้อมูลและ Auth เชื่อมต่อ Google Sheets, LINE และอีเมล  
 และเขียนคู่มือติดตั้งไว้ให้คนอื่นรับงานต่อได้
@@ -148,15 +155,15 @@
 
 ## Technical Skills
 
-|                  |                                                                                          |
-|------------------|------------------------------------------------------------------------------------------|
-| **Languages**    | TypeScript, JavaScript, HTML, CSS                                                        |
-| **Frontend**     | Next.js, React, Tailwind CSS, shadcn/ui, Framer Motion, Recharts                         |
-| **Backend**      | Next.js API Routes, Node.js, JWT, NextAuth, bcrypt                                       |
-| **Database**     | PostgreSQL, Supabase, Prisma ORM, Google Sheets API                                      |
-| **Automation**   | Google Apps Script, Vercel Cron, clasp                                                   |
-| **Integrations** | LINE Messaging API, LIFF, Brevo, Resend, SendGrid, Cloudinary, Cloudflare Turnstile     |
-| **Tools**        | Git, GitHub, pnpm, npm, Vercel                                                           |
+|                  |                                                                                     |
+|------------------|-------------------------------------------------------------------------------------|
+| **Languages**    | TypeScript, JavaScript, HTML, CSS                                                   |
+| **Frontend**     | Next.js, React, Tailwind CSS, shadcn/ui, Framer Motion, Recharts                    |
+| **Backend**      | Next.js API Routes, Node.js, JWT, NextAuth, bcrypt                                  |
+| **Database**     | PostgreSQL, Supabase, Prisma ORM, Google Sheets API                                 |
+| **Automation**   | Google Apps Script, Vercel Cron, clasp                                              |
+| **Integrations** | LINE Messaging API, LIFF, Brevo, Resend, SendGrid, Cloudinary, Cloudflare Turnstile |
+| **Tools**        | Git, GitHub, pnpm, npm, Vercel                                                      |
 
 ---
 
